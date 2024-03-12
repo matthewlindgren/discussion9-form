@@ -1,0 +1,83 @@
+/* Create an accessible color palette using var()function */
+/* https://www.w3schools.com/css/css3_variables.asp */
+
+form {
+  display: grid;
+  grid-template-columns: max-content auto;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  width:70%;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #000000;
+  background: #e5e5e5;
+  align-items: center;
+  justify-content: start;
+  justify-content: stretch;
+}
+
+.radio {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  /* background: #575294; */
+  color: #000000;
+}
+
+#name {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  background: #f0f0f0;
+  color: #000000;
+  border: 2px solid rgb(105, 105, 105);
+  border-radius: 3px;
+}
+
+#message {
+  width: 100%;
+  padding: 10px;
+  resize: vertical;
+  background: #f0f0f0;
+  color: #000000;
+  border: 2px solid rgb(105, 105, 105);
+  border-radius: 3px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+body {
+  padding: 5%;
+  font-family: Arial, sans-serif;
+}
+.skipToMain {
+  position: absolute;
+  top: -40px;
+}
+.skipToMain:focus {
+  top: 20px;
+}
+.sideBySide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
